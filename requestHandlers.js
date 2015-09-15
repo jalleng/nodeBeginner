@@ -9,7 +9,7 @@ function start(response) {
 
   var body = '<html>' +
     '<head>'+
-    '<meta http-equiv="Content-Type" content="text/html; '+
+    '<meta http-equiv="Content-Type" content="text/html;'+
     'charset=UTF-8" />'+
     '</head>'+
     '<body>'+
@@ -41,7 +41,7 @@ function upload(response, request) {
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write("received image: <br/>");
     response.write("<img src='/show' />");
-    respnse.end();
+    response.end();
   });
 }
 
